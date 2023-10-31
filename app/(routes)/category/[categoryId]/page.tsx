@@ -31,8 +31,6 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
     sizeId: searchParams.sizeId,
   });
 
-  console.log(products);
-
   const sizes = await getSizes();
   const colors = await getColors();
   const category = await getCategory(params.categoryId);
